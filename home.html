@@ -1480,14 +1480,10 @@
 		top: 0px;
 	}
 
-
-	
 	#Looking_for_work:hover  #Rectangle_1081  {
 		fill:#4682B4;
 	}
-
-
-
+	
 	#Looking_for_work:hover #Path_1459 {
 		fill:#9AB973
 	}
@@ -1499,6 +1495,7 @@
 	#Looling_to_hair:hover #Rectangle_548 {
 		fill:#E8E9EA;
 	}
+
 
 	#Looling_to_hair:hover  #Path_1459_eb {
 		fill:#9AB973;
@@ -1931,9 +1928,6 @@
 		text-transform: capitalize;
 	}
 
-	#Contact_us:hover #Rectangle_648{
-		fill:#9AB973;
-	}
 	#Contact_us:hover #arrows_1_eu{
 		opacity: 100%;
 		left:173px;
@@ -2012,6 +2006,39 @@
 		left: 0px;
 		top: 0px;
 	}
+
+
+#Contact_us span{
+  position: relative;
+  z-index: 2;
+}
+
+#Contact_us:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #9AB973;
+  transition: all .35s;
+}
+
+#Contact_us:hover{
+  color: #fff;
+}
+
+#Contact_us:hover:after{
+  width: 90%;
+}
+
+#Contact_us:hover #Rectangle_648{
+	fill:#E8E9EA;
+}
+
+
+
+
 	#Contact_us_ey {
 		left: 47.5px;
 		top: 9.644px;
@@ -2079,6 +2106,31 @@
 		left: 1px;
 		top: 0.856px;
 	}
+
+
+#Recognitions_4 span{
+  position: relative;
+  z-index: 2;
+}
+
+#Recognitions_4:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #9AB973;
+  transition: all .35s;
+}
+
+#Recognitions_4:hover{
+  color: #fff;
+}
+
+#Recognitions_4:hover:after{
+  width: 100%;
+}
 	#Call_us_ {
 		left: 69px;
 		top: 11px;
@@ -5945,6 +5997,7 @@ window.application = new Application();
 			<span>LOOKING FOR <br/>WORK?</span>
 		</div>
 		<div id="Group_16278">
+		
 			<svg class="Path_1459" viewBox="0 0 118.736 99.263">
 				<path id="Path_1459" d="M 0 0 L 118.736328125 0 L 118.736328125 99.26287841796875 L 0 99.26287841796875 L 0 0 Z">
 				</path>
@@ -6023,6 +6076,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="VIEW_JOB_LISTINGS">
+			
 			<span>VIEW JOB LISTINGS</span>
 		</div>
 	</div>
@@ -6043,7 +6097,9 @@ window.application = new Application();
 			<rect id="Rectangle_1093" rx="0" ry="0" x="0" y="0" width="6" height="57">
 			</rect>
 		</svg>
+
 		<div id="Contact_us_ey">
+	
 			<span>Contact us</span>
 		</div>
 	</div>
