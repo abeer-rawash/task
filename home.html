@@ -1711,15 +1711,10 @@
 		shape-rendering: auto;
 	}
 
-
-	#know_more_about_us:hover #Rectangle_637 {
-		fill: #9AB973
-	}
-
 	#know_more_about_us:hover #arrows_1  {
 		opacity: 100%;
 		left:310px;
-		transition: .6s ease;
+		transition: .5s ease;
 
 	}
 	#know_more_about_us:hover span{
@@ -1757,9 +1752,7 @@
 		overflow: visible;
 	}
 	#Path_1059 {
-		/*till I fix the hover I'll fix this color
-		fill: #9AB973;*/
-		fill: #4682B4;
+		fill: #9AB973;
 		
 	}
 
@@ -1788,7 +1781,7 @@
 	.Rectangle_1092 {
 		position: absolute;
 		overflow: visible;
-		width: 3px;
+		width: 10px;
 		height: 55px;
 		left: 1px;
 		top: 1px;
@@ -1862,7 +1855,7 @@
 		overflow: visible;
 	}
 	#Path_1059_ep {
-		fill: rgba(70,130,180,1);
+		fill: #9AB973;
 	}
 	.Path_1059_ep {
 		overflow: visible;
@@ -1892,15 +1885,35 @@
 		top: 1px;
 	}
 
-	#View_job_listings:hover #Rectangle_637_em{
-		fill:#9AB973;
-	}
 
 	#View_job_listings:hover span{
 		color: white;
 	}
 
 
+	#View_job_listings span{
+  position: relative;
+  z-index: 2;
+}
+
+#View_job_listings:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #9AB973;
+  transition: all .35s;
+}
+
+#View_job_listings:hover{
+  color: #fff;
+}
+
+#View_job_listings:hover:after{
+  width: 90%;
+}
 
 	#VIEW_JOB_LISTINGS {
 		left: 62px;
@@ -1976,8 +1989,7 @@
 		overflow: visible;
 	}
 	#Path_1059_ew {
-		/*will change when I fix the colors*/
-		fill: #4682B4;
+		fill: #9AB973;
 	}
 	.Path_1059_ew {
 		overflow: visible;
@@ -2627,6 +2639,29 @@
 	}
 
 
+#know_more_about_us span{
+  position: relative;
+  z-index: 2;
+}
+
+#know_more_about_us:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #9AB973;
+  transition: all .35s;
+}
+
+#know_more_about_us:hover{
+  color: #fff;
+}
+
+#know_more_about_us:hover:after{
+  width: 90%;
+}
 
 	.Rectangle_1099 {
 		position: absolute;
